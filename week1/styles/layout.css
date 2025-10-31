@@ -29,7 +29,7 @@ nav a:hover {
 }
 
 header {
-    background: grey;
+    background: black;
     color: white;
     padding: 2rem;
     grid-column: 1/-1;
@@ -45,19 +45,19 @@ main {
 .main-content{
     padding: 2rem;
     text-align: left;
-    background-color: black;
+    background-color: rgb(61, 60, 60);
     color: white;
 }
 
 .side{
-    background-color: rgb(115, 114, 114);
+    background-color: rgb(128, 126, 126);
     color: white;
     padding: 2rem;
     text-align: left;
 }
 
 footer {
-    background: wheat;
+    background: black;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / -1;
