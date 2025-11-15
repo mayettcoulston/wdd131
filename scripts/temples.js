@@ -1,0 +1,12 @@
+const hamburger = document.querySelector('#hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+
+    if (hamburger.textContent === '☰') {
+        hamburger.textContent = 'X';
+    } else {
+        hamburger.textContent = '☰';
+    }
+});

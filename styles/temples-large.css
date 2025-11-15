@@ -1,0 +1,21 @@
+@media screen and (min-width : 640px) {
+    .gallery {
+            grid-template-columns: repeat(3, 1fr);
+            gap: .1rem;
+        }
+    
+        #hamburger {
+            display: none;
+        }
+
+    header {
+        background-color: rgb(1, 125, 174);
+        color: white;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1rem; }
+}
