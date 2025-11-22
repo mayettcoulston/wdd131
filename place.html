@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-larger.css" media="screen and (min-width: 640px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Nairobi City</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/nairobi-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/nairobi-medium.webp" media="(min-width: 500px)">
+                <img src="images/nairobi-small.webp" alt="Nairobi city image" width="1400" height="700">
+            </picture>
+        </div>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img class="small-weather-icon" src="images/cloud.svg" alt="Weather icon">
+            <p>Partly Cloudy — 24°C</p>
+            <p>Wind Speed: 10 km/h</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> |Coulston Mayett | Nairobi, Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/place.js" defer></script>
+
+</body>
+
+</html>
