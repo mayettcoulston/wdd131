@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Temple Album</h1>
+
+        <button id="hamburger" aria-label="Menu">☰</button>
+
+        <nav>
+            <ul>
+                <li><a id="home" href="#">Home</a></li>
+                <li><a id="old" href="#">Old</a></li>
+                <li><a id="new" href="#">New</a></li>
+                <li><a id="large" href="#">Large</a></li>
+                <li><a  id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="templeCards">
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> |Coulston Mayett | Nairobi, Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/filtered-temples.js"></script>
+
+</body>
+
+</html>
