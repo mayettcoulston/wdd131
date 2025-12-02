@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    #site-plan {
+        padding: 1rem;
+    }
+}
