@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="forms">
+            <fieldset>
+                <legend>Product Name*</legend>
+                <label><select name="product" id="product" required>
+                    <option value="" disabled selected> select a product</option>
+                </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Rating</legend>
+                <label>
+                    <input type="radio" name="rating" value="1" id="rating1" required> 1
+                    <input type="radio" name="rating" value="2" id="rating2" required> 2
+                    <input type="radio" name="rating" value="3" id="rating3" required> 3
+                    <input type="radio" name="rating" value="4" id="rating4" required> 4
+                    <input type="radio" name="rating" value="5" id="rating5" required> 5
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Installation Date</legend>
+                <label>
+                    <input type="date" name="instalationDate" id="instalationDate" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful features <br>(check all that applies)</br></legend>
+                <label><input type="checkbox" name="features" value="feature1" id="feature1"> Durability</label>
+                <label><input type="checkbox" name="features" value="feature2" id="feature2"> Ease of use</label>
+                <label><input type="checkbox" name="features" value="feature3" id="feature3"> Perfomance</label>
+                <label><input type="checkbox" name="features" value="feature4" id="feature4"> Design</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments</legend>
+                <label>
+                    <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Name</legend>
+                <label>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+            </fieldset>
+
+            <button type="submit">Submit Review</button>
+            
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> |Coulston Mayett | Nairobi, Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
